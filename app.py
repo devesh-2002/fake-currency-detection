@@ -35,6 +35,7 @@ def predict():
         test_image_read_1 = cv2.imread(file_path)
         test_image_1 = process_jpg_image(test_image_read_1)
         prediction_1 = model.predict(test_image_1)
+        print(prediction_1)
         return render_template('index.html', prediction_text=prediction_1)
 
 if __name__ == "__main__":
