@@ -1,3 +1,0 @@
-# fake-currency-detection
-
-
