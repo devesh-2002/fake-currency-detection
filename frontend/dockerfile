@@ -1,0 +1,18 @@
+FROM node:21-alpine
+
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+
+RUN yarn 
+
+COPY . .
+
+EXPOSE 5173
+
+ENV NODE_ENV production
+RUN yarn global add create-vite
+
+RUN yarn build
+
+CMD ["yarn", "dev"]
