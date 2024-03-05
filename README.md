@@ -3,8 +3,9 @@ This project takes an image of the currency and checks if the currency uploaded 
 
 ## Tech Stack
 1. React
-2. Flask
-3. Jupyter-Notebook
+2. Docker
+3. Flask
+4. Jupyter-Notebook
 
 ## Running the project 
 1. Fork and Clone the forked repository.
